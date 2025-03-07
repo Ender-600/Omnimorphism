@@ -50,7 +50,7 @@ class DynamicMethodGenerator:
             Generate exactly this function:
 
             def {method_name}(item, *args, **kwargs):
-                # Implement logic based on class '{class_name}' with attributes/methods: {attrs}.
+                # Implement logic based on class '{class_name}' with attributes/methods: {attrs} Remember such attributes/methods will always be used in the function.
                 pass
             """
         )

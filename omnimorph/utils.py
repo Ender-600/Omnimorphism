@@ -34,3 +34,12 @@ def load_generated_code(code, obj):
     local_env = {}
     exec(code, global_env, local_env)
     return local_env
+
+def sanitize_code(code: str) -> str:
+    lines = code.splitlines()
+    cleaned_lines = []
+    for line in lines:
+        if line.strip().startswith("```"):
+            continue
+        cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
