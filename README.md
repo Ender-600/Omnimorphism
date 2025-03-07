@@ -1,24 +1,20 @@
 # Omnimorphism SDK
 
-Omnimorphism SDK is an automated development toolkit that enables seamless conversion and integration of objects across different libraries and systems. The SDK dynamically inspects the data structures of your objects and uses an AI agent to generate conversion code at build time. This allows you to convert your custom objects into formats compatible with libraries such as Open3D, NumPy, trimesh, ROS, and more, or to integrate heterogeneous datasets with different schemas.
+Omnimorphism SDK is an automated development toolkit that enables seamless conversion and integration of objects across different libraries and systems.
 
 ## Features
 
-- **Dynamic Data Structure Parsing:**  
-  Uses Python introspection to automatically extract attributes and types from your objects.
+Dynamic Data Structure Parsing:
 
-- **AI-Driven Code Generation:**  
-  Leverages a LangChain Agent (with potential future migration to LangGraph) to generate Python conversion functions dynamically. These functions convert objects from one format (or library) to another based on detailed prompts.
+AI-Driven Code Generation:
 
-- **Unified Conversion API:**  
-  With a simple interface such as `Omnimorph(obj).to('targetlib')`, the SDK automatically generates (or loads cached) conversion functions to convert your objects.
+Unified Conversion & Method Generation API:
 
-- **Automatic Caching & Version Control:**  
-  Generated conversion code is stored in the `generated/` directory and automatically committed to version control (e.g., Git), making it easy to review and maintain.
+Automatic Caching & Version Control:
 
-- **Integrated Unit Testing:**  
-  During the build phase, unit tests are run to verify the correctness of generated conversion code, ensuring that all conversions meet your expected logic.
+Automated Unit Testing:
 
+Flexible Data Integration:
 
 ## Installation & Setup
 
