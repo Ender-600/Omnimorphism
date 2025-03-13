@@ -11,14 +11,14 @@ if __name__ == "__main__":
     from dotenv import load_dotenv
     load_dotenv()
 
-    # class Human:
-    #     def __init__(self, mass, height):
-    #         self.mass = mass
-    #         self.height = height
+    class Human:
+        def __init__(self, mass, height):
+            self.mass = mass
+            self.height = height
 
-    # human = Human(80, 1.75)
-    # om_human = Omnimorph(human)
-    # print("Is heavy:", om_human.is_heavy(threshold=20.0))
+    human = Human(80, 1.75)
+    om_human = Omnimorph(human)
+    print("Is heavy:", om_human.is_heavy(threshold=20.0))
 
 
     class KlamptGeometry:
